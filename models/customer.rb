@@ -11,11 +11,27 @@ class Customer
     @funds = options['funds']
   end
 
-  def self.all()
+  def self.find_all()
     sql = "SELECT * FROM customers"
     values = []
     customers = SqlRunner.run(sql, values)
     result = customers.map { |customer| Customer.new(customer)}
     return result
+  end
+
+  def save()
+    sql = "INSERT INTO customers
+    (
+      name,
+      funds
+    )
+    VALUES
+    (
+      $1, $2
+    )
+    RETURNING id"
+    values = [@name, @funds]
+    user = SqlRunner.run( sql, values ).first
+    @id = user['id'].to_i
   end
 end
