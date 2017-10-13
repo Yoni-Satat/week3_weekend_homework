@@ -23,14 +23,14 @@ film2.save()
 film3.save()
 film4.save()
 
-# tickect1 = Ticket.new({'customer_id' => customer1.id, 'film_id' => film2.id})
-# tickect2 = Ticket.new({'customer_id' => customer1.id, 'film_id' => film1.id})
-# tickect3 = Ticket.new({'customer_id' => customer2.id, 'film_id' => film2.id})
-# tickect4 = Ticket.new({'customer_id' => customer2.id, 'film_id' => film3.id})
-# tickect5 = Ticket.new({'customer_id' => customer3.id, 'film_id' => film4.id})
-# tickect6 = Ticket.new({'customer_id' => customer4.id, 'film_id' => film4.id})
-# tickect7 = Ticket.new({'customer_id' => customer4.id, 'film_id' => film3.id})
-# tickect8 = Ticket.new({'customer_id' => customer2.id, 'film_id' => film1.id})
+tickect1 = Ticket.new({'customer_id' => customer1.id, 'film_id' => film2.id})
+tickect2 = Ticket.new({'customer_id' => customer1.id, 'film_id' => film1.id})
+tickect3 = Ticket.new({'customer_id' => customer2.id, 'film_id' => film2.id})
+tickect4 = Ticket.new({'customer_id' => customer2.id, 'film_id' => film3.id})
+tickect5 = Ticket.new({'customer_id' => customer3.id, 'film_id' => film4.id})
+tickect6 = Ticket.new({'customer_id' => customer4.id, 'film_id' => film4.id})
+tickect7 = Ticket.new({'customer_id' => customer4.id, 'film_id' => film3.id})
+tickect8 = Ticket.new({'customer_id' => customer2.id, 'film_id' => film1.id})
 
 binding.pry
 nil
