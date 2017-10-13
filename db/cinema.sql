@@ -1,6 +1,6 @@
 DROP TABLE customers;
 DROP TABLE films;
-DROP TABLE tickets;
+-- DROP TABLE tickets;
 
 CREATE TABLE customers (
   id SERIAL4 PRIMARY KEY,
@@ -14,8 +14,8 @@ CREATE TABLE films (
   price INT4
 );
 
-CREATE TABLE tickets (
-  id SERIAL4 PRIMARY KEY,
-  customer_id INT4 REFERENCES customers(id),
-  film_id INT4 REFERENCES films(id)
-)
+-- CREATE TABLE tickets (
+--   id SERIAL4 PRIMARY KEY,
+--   customer_id INT4 REFERENCES customers(id),
+--   film_id INT4 REFERENCES films(id)
+-- )
