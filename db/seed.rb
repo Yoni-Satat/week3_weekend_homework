@@ -8,13 +8,16 @@ customer1 = Customer.new({ 'name' => 'Yoni', 'funds' => 100})
 customer2 = Customer.new({ 'name' => 'Miguel', 'funds' => 150})
 customer3 = Customer.new({ 'name' => 'Darren', 'funds' => 125})
 customer4 = Customer.new({ 'name' => 'Sandy', 'funds' => 200})
+customer1.save
+customer2.save
+customer3.save
+customer4.save
 
 
 film1 = Film.new({ 'title' => 'Back to The Future', 'price' => 25})
 film2 = Film.new({ 'title' => 'Shawshank Redumption', 'price' => 30})
 film3 = Film.new({ 'title' => 'The Smurfs', 'price' => 24})
 film4 = Film.new({ 'title' => 'The Princess Bride', 'price' => 25})
-
 
 # tickect1 = Ticket.new({'customer_id' => customer1.id, 'film_id' => film2.id})
 # tickect2 = Ticket.new({'customer_id' => customer1.id, 'film_id' => film1.id})
