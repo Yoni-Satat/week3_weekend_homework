@@ -3,6 +3,10 @@ require_relative('../models/film.rb')
 require_relative('../models/tickets.rb')
 require('pry')
 
+Ticket.delete_all()
+Customer.delete_all()
+Film.delete_all()
+
 
 customer1 = Customer.new({ 'name' => 'Yoni', 'funds' => 100})
 customer2 = Customer.new({ 'name' => 'Miguel', 'funds' => 150})
