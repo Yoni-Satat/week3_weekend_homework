@@ -7,7 +7,15 @@ class Film
 
   def initialize(options)
     @id = options['id'].to_i
-    @name = options['title']
-    @funds = options['price']
+    @title = options['title']
+    @price = options['price'].to_i
+  end
+
+  def self.find_all()
+    sql = "SELECT * FROM films"
+    values = []
+    films = SqlRunner.run(sql, values)
+    result = films.map { |film| Film.new(film)}
+    return result
   end
 end
