@@ -10,4 +10,12 @@ class Customer
     @name = options['name']
     @funds = options['funds']
   end
+
+  def self.all()
+    sql = "SELECT * FROM customers"
+    values = []
+    customers = SqlRunner.run(sql, values)
+    result = customers.map { |customer| Customer.new(customer)}
+    return result
+  end
 end
