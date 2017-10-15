@@ -72,4 +72,11 @@ class Customer
     films = results.map {|film| Film.new(film)}
     return films
   end
+
+  def pay(movie)
+    @funds -= movie.price
+    update
+  end
+
+
 end
