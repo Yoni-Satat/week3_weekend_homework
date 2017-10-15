@@ -78,5 +78,10 @@ class Customer
     update
   end
 
+  def tickets_count()
+    result = films()
+    return result.count()
+  end
+
 
 end
